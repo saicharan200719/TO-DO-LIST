@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(64,24,112,1) 35%, rgba(0,212,255,1) 100%);
+font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    background: rgb(2,0,36);
+background: linear-gradient(-185deg, rgba(2,0,36,1) 0%, rgba(19,106,144,1) 43%, rgba(15,138,191,1) 56%, rgba(0,212,255,1) 100%);
+ position: absolute;
+ height: 70%;
+ width: 50%;
+ left: 25%;
+ top: 13%;
+}
+
+h2{
+    position: relative;
+    color: white;
+    padding: 3%;
+    left: 36%;
+    text-transform: uppercase;
+}
+
+.box{
+    position: relative;
+    padding: 4%;
+    left: 17%;
+}
+
+.box input{
+    transition: 0.4s;
+    padding: 2%;
+    width: 55%;
+    outline: none;
+}
+
+.box input:hover{
+  color: purple;
+  background: black;
+  outline: none;
+}
+
+.box span{
+    transition: 0.4s;
+    position: absolute;
+    background: white;
+    padding: 2%;
+    width: 7%;
+    top: 90%;
+    left: 48%;
+    text-align: center;
+}
+
+.box span:hover{
+  color: purple;
+  background: black;
+}
+
+/* Remove margins and padding from the list */
+ul {
+    position: relative;
+    width: 28%;
+    margin-top: 30%;
+    margin-left: 31.5%;
+    text-transform: capitalize;
+  }
+  
+  /* Style the list items */
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Set all odd list items to a different color (zebra-stripes) */
+  ul li:nth-child(odd) {
+    background: #f9f9f9;
+  }
+  
+  /* Darker background-color on hover */
+  ul li:hover {
+    background: #ddd;
+  }
+  
+  /* When clicked on, add a background color and strike out text */
+  ul li.checked {
+    background: black;
+    color: purple;
+    text-decoration: line-through;
+  }
+  
+  /* Add a "checked" mark when clicked on */
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: purple;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 14px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .close:hover {
+    background-color: #f44336;
+    color: white;
+  }
